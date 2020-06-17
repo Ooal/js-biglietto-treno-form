@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Biglietto Treno</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    
+    <div class="form">
+      <div class="parteform">
+        <label for="nome">Nome </label>
+        <input id="nome" type="text" name="nome" value="" placeholder="Nome">
+      </div>
+
+      <div class="parteform">
+        <label for="km">Numero di kilometri da percorrere </label>
+        <input id="km" type="text" name="nome" value="" placeholder="Km">
+      </div>
+
+      <div class="parteform">
+        <label for="eta">Età</label>
+        <select id="eta" name="">
+          <option value="Maggiorenne">Maggiorenne</option>
+          <option value="Minorenne">Minorenne</option>
+          <option value="Over65">Over65</option>
+        </select>
+      </div>
+
+      <div class="parteform">
+        <button id="printBiglietto" type="button" name="printBiglietto">Calcola</button>
+        <button id="reset" type="button" name="reset">Annulla</button>
+      </div>
+    </div>
+    <div id="biglietto" class="hidden">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Età</th>
+            <th>Carrozza</th>
+            <th>Treno</th>
+            <th>Prezzo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <th id="passeggero"></th>
+          <th id="categoriaEta"></th>
+          <th id=carrozza></th>
+          <th id="treno"></th>
+          <th id="prezzo"></th>
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
